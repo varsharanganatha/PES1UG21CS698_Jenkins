@@ -11,8 +11,8 @@
         }
         stage('Test') { 
             steps {
-                ec "This is Test stage." 
-                s './output'
+                echo "This is Test stage." 
+                sh './output'
                 echo "Test Stage Successful"
             }
         }
